@@ -15,14 +15,13 @@
     <header>
       <%= render 'layouts/navigation' %>
     </header>
-    <main role="main">
-       <%= render 'layouts/messages' %>
+    <main role="main">       
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>		    
 <div id="fullpage">
-	<div class="section"> <%= yield %></div>
-	<div class="section"> <%= yield %></div>
-	<div class="section"> <%= yield %></div>
-	<div class="section"> <%= yield %></div>
+	<div class="section"><%= render 'layouts/messages' %> <%= yield %></div>
+	<div class="section"><%= render 'layouts/messages' %> <%= yield %></div>
+	<div class="section"><%= render 'layouts/messages' %> <%= yield %></div>
+	<div class="section"><%= render 'layouts/messages' %> <%= yield %></div>
 </div>       
  <script>
 	$(document).ready(function() {
@@ -30,12 +29,12 @@
 		//Navigation
 		menu: '#menu',
 		lockAnchors: false,
-		anchors:['firstPage', 'secondPage'],
-		navigation: false,
+		anchors:['firstPage', 'secondPage','ThirdPage','FourthPage'],
+		navigation: true,
 		navigationPosition: 'right',
-		navigationTooltips: ['firstSlide', 'secondSlide'],
-		showActiveTooltip: false,
-		slidesNavigation: false,
+		navigationTooltips: ['firstPage', 'secondPage','ThirdPage','FourthPage'],
+		showActiveTooltip: true,
+		slidesNavigation: true,
 		slidesNavPosition: 'bottom',
 
 		//Scrolling
@@ -47,17 +46,17 @@
 		scrollBar: false,
 		easing: 'easeInOutCubic',
 		easingcss3: 'ease',
-		loopBottom: false,
-		loopTop: false,
+		loopBottom: true,
+		loopTop: true,
 		loopHorizontal: true,
-		continuousVertical: false,
+		continuousVertical: true,
 		continuousHorizontal: false,
 		scrollHorizontally: false,
 		interlockedSlides: false,
 		dragAndMove: false,
 		offsetSections: false,
 		resetSliders: false,
-		fadingEffect: false,
+		fadingEffect: true,
 		normalScrollElements: '#element1, .element2',
 		scrollOverflow: false,
 		scrollOverflowReset: false,
@@ -74,7 +73,7 @@
 		//Design
 		controlArrows: true,
 		verticalCentered: true,
-		sectionsColor : ['#ccc', '#fff'],
+		sectionsColor : ['#ccc', 'orange'],
 		paddingTop: '3em',
 		paddingBottom: '10px',
 		fixedElements: '#header, .footer',
