@@ -6,6 +6,7 @@
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Learn Rails" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
     <%= stylesheet_link_tag 'application','https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css' %>    
+    <%= javascript_include_tag 'https://code.jquery.com/jquery-3.2.1.min.js' %>
     <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js' %>
     <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.extensions.min.js' %>  
     <%= javascript_include_tag 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.js' %>
