@@ -5,8 +5,12 @@
     <title><%= content_for?(:title) ? yield(:title) : "Learn Rails" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Learn Rails" %>">
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => 'reload' %>
+    <%= stylesheet_link_tag 'application','https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.css' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => 'reload' %>
-    <%= javascript_include_tag 'application', 'https://cdnjs.com/libraries/fullPage.js' %>
+    <%= javascript_include_tag 'application', 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js' %>
+    <%= javascript_include_tag 'application', 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.extensions.min.js' %>  
+    <%= javascript_include_tag 'application', 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.js' %>
+    <%= javascript_include_tag 'application', 'https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.js' %>
     <%= csrf_meta_tags %>
   </head>
   <body>
